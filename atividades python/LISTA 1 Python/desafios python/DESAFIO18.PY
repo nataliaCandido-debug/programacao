@@ -1,0 +1,6 @@
+horas_normais = float(input("Digite o numero de horas trabalhadas"))
+horas_extras = float(input("Digite o numero de horas extras trabalhadas"))
+salario_bruto = (horas_normais * 10) + (horas_extras*15)
+salario_liquido = salario_bruto -(salario_bruto * 0.10)
+print("salario bruto",salario_bruto)
+print("salario liquido",salario_liquido)
