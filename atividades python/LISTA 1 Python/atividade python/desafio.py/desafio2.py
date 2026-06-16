@@ -23,43 +23,48 @@ estoque_sabonete=66
 min_estoque_sabonete=17
 
 bolacha = {
-    'estoque':200,
+    'estoque_maximo':200,
     'estoque_minimo':10,
 }
 
 uva = {
-    'estoque':150,
+    'estoque_maximo':150,
    'estoque_minimo':17,
 }
 
 macarrao = {
-    'estoque':123,
+    'estoque_maximo':123,
     'estoque_minimo':13,
 }
 
 sabonete = {
-    'estoque':107,
+    'estoque_maximo':107,
     'estoque_minimo':34,
 }
 
 mamao = {
-    'estoque':337,
+    'estoque_maximo':337,
     'estoque_minimo':11,
 }
 
 maca = {
-    'estoque':201,
+    'estoque_maximo':201,
     'estoque_minimo':27,
 }
 
 melancia = { 
-    'estoque':437,
+    'estoque_maximo':437,
     'estoque_minimo':17,
 }
 
 leite = {
-    'estoque':357,
+    'estoque_maximo':357,
     'estoque_minimo':23,
 }
 
-if=
+if estoque < estoque_minimo:
+    print ("favor de repor o estoque!Está abaixo do esperado.")
+elif estoque > estoque_maximo:
+    print ("o esoque està mais cheio do que o esperado!Favor retirar.")
+else :
+    ("estoque está conforme o esperado!Não precisa mudar.")
